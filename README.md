@@ -1,4 +1,4 @@
-# JSTS_Tutorials
+# JS_TS_Tutorials
 JavaScript &amp; TypeScript Tutorials and experiments
 
 

@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",  //deciddes to which version of Js the ts code gets translated
+    //"watch": true // was ment to be an auto "tsc" but created the error -> Option 'watch' can only be specified on command line. -> tsc -w in the comandline does the same thing
+    "lib": ["dom", "ES2015"] //lets you add bundles of libs with which your project then can work without errors 
+  },
+  // "watch": true does not work in this new version so i looked for the up-to-date way to activate watch mode but not sure if this is the right thing or if it even works but i will find out i guess
+  // NEW: Options for file/directory watching
+  "watchOptions": {
+    // Use native file system events for files and directories
+    "watchFile": "useFsEvents",
+    "watchDirectory": "useFsEvents",
+    // Poll files for updates more frequently
+    // when they're updated a lot.
+    "fallbackPolling": "dynamicPriority"
+  }
+}

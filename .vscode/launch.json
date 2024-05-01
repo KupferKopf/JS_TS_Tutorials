@@ -1,0 +1,21 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\TS_Mosh_beginning\\src\\index.ts", // the programm starts here
+            "preLaunchTask": "tsc: build - TS_Mosh_beginning/tsconfig.json", // tells vs code to use the TS compiler with it using this config file 
+            "outFiles": [
+                "${workspaceFolder}/**/*.js" // where the JS files end up
+            ]
+        }
+    ]
+}
